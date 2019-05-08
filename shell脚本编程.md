@@ -236,9 +236,10 @@ fi
 **练习：**
 1、写一个脚本
 计算/etc/passwd文件中的第10个用户和第20个用户的id号之和；        
-    id1=$(head -10  /etc/passwd | tail -1  | cut  -d:  -f3)
-    id2=$(head -20   /etc/passwd | tail -1  | cut  -d:  -f3)
-
+```    
+id1=$(head -10  /etc/passwd | tail -1  | cut  -d:  -f3)
+id2=$(head -20   /etc/passwd | tail -1  | cut  -d:  -f3)
+```
 
 2、写一个脚本
 计算/etc/rc.d/init.d/functions和/etc/inittab文件的空白行数之和；     
