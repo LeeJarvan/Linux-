@@ -431,6 +431,7 @@ CREATE TABLE `tab1` (
 
 查看数据库支持的所有存储引擎类型：
 `mysql> SHOW  ENGINES;`
+
 查看某表的状态信息：
 `mysql> SHOW  TABLES  STATUS  [LIKE  'tbl_name'][WHERE clause]`
 
@@ -516,18 +517,24 @@ MariaDB [testdb]> show tables;
 **alter_specification**
 >**字段**
 >添加：`ADD  [COLUMN]  col_name  data_type  [FIRST | AFTER col_name ]`
+
 >删除：`DROP  [COLUMN] col_name `
+
 >修改：`CHANGE [COLUMN] old_col_name new_col_name column_definition  [FIRST|AFTER col_name]	
 >MODIFY [COLUMN] col_name column_definition  [FIRST | AFTER col_name]`
 
 >**键**
+
 >添加：`ADD  {PRIMARY|UNIQUE|FOREIGN}  KEY (col1, col2,...)`
+
 >删除：
 >主键：`DROP PRIMARY KEY`
 >外键：`DROP FOREIGN KEY fk_symbol`
 
 >**索引**
+
 >添加：`ADD {INDEX|KEY} [index_name]  (col1, col2,...)`
+
 >删除：`DROP {INDEX|KEY}  index_name`
 
 >**表选项**
