@@ -5,8 +5,8 @@
   	
 
 **应用程序服务器：**
-- IIS： .Net 
-- tomcat： .jsp
+- IIS：.Net 
+- tomcat：.jsp
   	
 
 ##### httpd的安装和使用：
@@ -74,8 +74,8 @@
 >`service  {start|stop|restart|status|configtest|reload}  httpd`
 >
 >（8）检查配置语法：　　
->`httpd -t`  通用　　
->`service httpd configtest`  centos7不支持				
+>`httpd -t` 通用　　
+>`service httpd configtest` centos7不支持				
 
 
 ##### CentOS 7：httpd-2.4
@@ -102,7 +102,7 @@
 >`systemctl  {start|stop|restart|status}  httpd.service`
 >
 >（8）检查配置语法：　　
->`httpd -t`  通用　　				
+>`httpd -t` 通用　　				
 
 ### httpd-2.4的常用配置
 **主配置文件：/etc/httpd/conf/httpd.conf**
@@ -127,7 +127,7 @@
 - Listen  8080 写多个就可开启多个端口，但是访问的还是同一个网站
 
 注意：改了端口，要在访问时加上自己改的端口
-(3) 修改监听socket，重启服务进程方可生效
+(3)修改监听socket，重启服务进程方可生效
 (4)限制其必须通过ssl通信时，protocol需要定义为https
 
 
