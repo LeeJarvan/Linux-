@@ -693,7 +693,10 @@ MariaDB [testdb]> SELECT * FROM s3;
 ##### DQL（SELECT）				
 格式：`SELECT col1,col2,... FROM tbl_name [WHERE clause] [ORDER BY 'col_name' [DESC]] [LIMIT [m,]n]; `
 
-示例：`select id,name,... from tab_name;` 查出指定的表中内容
+示例：
+
+`select id,name,... from tab_name;` 查出指定的表中内容
+
 `select count(*) from tab_name; `查看表中的记录数量，count()是自带的函数
 
 
