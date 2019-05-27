@@ -14,7 +14,9 @@
 ![](https://upload-images.jianshu.io/upload_images/16547068-80b2beca2a177c9c.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 >② 所依赖的相关包
+
 >openssl-devel expat-devel pcre-devel 　　http所依赖的
+
 >bzip2-devel libxml2-devel libmcrypt-devel 　　php所依赖的，注意：需epel扩展源
 
 
