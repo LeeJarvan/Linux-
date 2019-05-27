@@ -12,7 +12,9 @@ https://downloads.mariadb.org/mariadb/repositories/
 
 
 >`systemctl start mariadb` 开启服务
+
 >`ss -nutl` 打开了3306的tcp端口
+
 >查询端口对应的进程信息 `lsof -i :3306` 或 `netstat -tnlp | grep 3306`
 
 ```
@@ -156,6 +158,7 @@ Welcome to the MariaDB monitor.  Commands end with ; or \g.
 **-S**,--socket=/PATH/TO/mysql.sock：套接字文件路径；
 				
 #### 客户端命令与服务端命令
+
 ##### 客户端命令：本地执行
 **获取帮助**
 >mysql> help
@@ -305,7 +308,7 @@ MariaDB [hidb]>
 
 #### MySQL表管理						
 ##### 基本数据类型
-######字符型
+###### 字符型
 - 定长字符型
   CHAR(#)；不区分字符大小写；#指定字节长度，最大不超过256
   BINARY(#)；区分字符大小写；#同上
@@ -920,7 +923,7 @@ skip_name_resolve = ON
 ##### 授权，回收权限
 
 ###### 授权
-授权并创建账号：`**GRANT priv_type,... ON [object_type] db_name.tb_name TO 'user'@'host' [IDENTIFIED BY 'password'] [WITHGRANT OPTION]; `
+授权并创建账号：`GRANT priv_type,... ON [object_type] db_name.tb_name TO 'user'@'host' [IDENTIFIED BY 'password'] [WITHGRANT OPTION]; `
 
 >① priv_type: ALL [PRIVILEGES] 授权类型：
 >insert增，delete删 ， update改，select查，all所有权限
