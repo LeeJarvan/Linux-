@@ -246,7 +246,7 @@ Listen 8080
 
 ```
 #首先创建对应的存放目录，此处设置与httpd服务上设置的fcgi://192.168.109:9000/var/www/html/$相一致
-[root@fpm ~]# mkdir -pv /var/www/html/    
+[root@centos7 ~]# mkdir -pv /var/www/html/    
 
 [root@centos7 ~]# vim /var/www/html/index.php  #
 <?php
