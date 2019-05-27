@@ -843,8 +843,11 @@ MariaDB [testdb]> SELECT * FROM students WHERE age not IN(18,20,22);
 ```
 
 **4、LIMIT限制**
+
 SELECT * FROM 表 LIMIT 5;            - 前5行
+
 SELECT * FROM 表  LIMIT 4,5;          - 从第4行开始的5行
+
 SELECT * FROM 表  LIMIT 5 OFFSET 4    - 从第4行开始的5行
 
 ```
@@ -918,7 +921,7 @@ skip_name_resolve = ON
 
 **更改口令**：多用第一种
 
-① **SET PASSWORD FOR **'user'@'host' = PASSWORD('password');
+① SET PASSWORD FOR\'user'@'host' = PASSWORD('password');
 分析：password();是调用了自带的函数
 例：set password for 'along'@'192.168.30.%'=password('along');
 
