@@ -215,7 +215,7 @@ cd /app/php/etc 在编译源后的路径
 cp /app/php/etc/php-fpm.conf.default /app/php/etc/php-fpm.conf
 ```
 
-**注意：**在centos 7 中php-fpm.conf.default 和www.conf.default 这两个文件都需要cp，但centos 6把这两个文件合在php-fpm.conf.default 中了
+**注意:** 在centos 7 中php-fpm.conf.default 和www.conf.default 这两个文件都需要cp，但centos 6把这两个文件合在php-fpm.conf.default 中了
 
 ```
 vim /app/php/etc/php-fpm.conf 可以不修改，根据自己想要的设置
