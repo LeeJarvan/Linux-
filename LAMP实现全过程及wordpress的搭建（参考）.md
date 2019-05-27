@@ -359,8 +359,11 @@ phpinfo() 确认xcache 已加载
 
 >② 所依赖的相关包
 >`openssl-devel expat-devel pcre-devel` http所依赖的
+
 >`bzip2-devel libxml2-devel libmcrypt-devel` php所依赖的，注意：需epel扩展源
+
 >`yum -y install openssl-devel expat-devel pcre-devel`
+
 >`yum -y install bzip2-devel libxml2-devel libmcrypt-devel`
 
 #### 编译httpd2.4
@@ -419,7 +422,9 @@ PATH=/app/httpd24/bin:/usr/local/mysql/bin/:/app/php/bin/:$PATH 顺便把后边�
 ```
 
 ② 启动服务
+
 `apachectl` 启动服务
+
 `ss -tnl` 查看端口
 
 #### 二进制安装mariadb-10.2.8
@@ -461,7 +466,7 @@ skip_name_resolve = on //忽略名字的反向解析，加快速度
 
 ```
 cd /usr/local/mysql 一定要在这个目录下执行脚本，因为脚本写死了
-./scripts/mysql_install_db **--user=**mysql** --datadir=**/app/mysqldb 执行脚本
+./scripts/mysql_install_db --user=mysql --datadir=/app/mysqldb 执行脚本
 ```
 
 完成后就会在/app/mysqldb/ 生成mysql系统数据库
